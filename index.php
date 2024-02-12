@@ -13,6 +13,6 @@
 
 
 
-    <script scr="js/index.js"></script>
+    
 </body>
 </html>

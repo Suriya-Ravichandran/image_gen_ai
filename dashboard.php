@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image Generator AI</title>
   <link rel="stylesheet" href="style/dashboard.css">
-  <script src="js/dashboard.js" defer></script>
 </head>
 <body>
   <section class="image-generator">
@@ -34,5 +33,6 @@
     <div class="img-card"><img src="asset/image/img-3.jpg" alt="image"></div>
     <div class="img-card"><img src="asset/image/img-4.jpg" alt="image"></div>
   </section>
+  <script src="js/dashboard.js"></script>
 </body>
 </html>
