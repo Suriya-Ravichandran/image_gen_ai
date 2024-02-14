@@ -1,5 +1,5 @@
 <?php
-    $conn = mysqli_connect("mysql.selfmade.ninja","suriya","Suriya@gocourse","suriya_image");
+    $conn = mysqli_connect("localhost","root","","imageweb");
     if(!$conn){
         echo "Database connected". mysqli_connect_error();
     }

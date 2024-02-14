@@ -37,7 +37,7 @@ if (!isset($_SESSION['id'])) {
             <option value="2">2 Images</option>
             <option value="3">3 Images</option>
             <option value="4" selected>4 Images</option>
-            <option value="3">5 Images</option>
+            
           </select>
           <button type="submit" class="generate-btn">Generate</button>
         </div>
