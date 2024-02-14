@@ -24,7 +24,11 @@
             <input type="Submit" value="Signup Now">
           </div>
           <div class="text">
-            <h3>Already have an account? <a href="login.html">Login now</a></h3>
+            <h3>Already have an account? <a href="login.php">Login now</a></h3>
+          </div>
+          <br>
+          <div class="text2">
+          <h2>Back To:<a href="index.php"> Home</a></h2>
           </div>
         </form>
       </section>

@@ -7,7 +7,60 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1390px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  background-color: rgb(79, 112, 201);
+}
+.navbar .logo a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color:black;
+}
+.navbar .links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+}
+.navbar .links a {
+  font-weight: 500;
+  text-decoration: none;
+  color:black;
+  padding: 10px 0;
+  transition: 0.2s ease;
+}
+.navbar .links a:hover {
+  color: #47b2e4;
+}
+.navbar .buttons a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  padding: 15px 0;
+  transition: 0.2s ease;
+}
+.navbar .buttons a:not(:last-child) {
+  margin-right: 30px;
+}
+.navbar .buttons .signin:hover {
+  color: #47b2e4;
+}
+.navbar .buttons .signup {
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 0.375rem;
+  text-align: center;
+  transition: 0.2s ease;
+}
+.navbar .buttons .signup:hover {
+  background-color: #47b2e4;
+  color: black;
+}
 .image-generator {
   height: 40vh;
   display: flex;

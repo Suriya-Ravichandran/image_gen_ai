@@ -94,3 +94,17 @@ body{
   form .text h3 a:hover{
     text-decoration: underline;
   }
+  form .text2 h2{
+    color: #333;
+    width: 100%;
+    text-align: left;
+   }
+   form .text2 h2 a{
+     color: #4070f4;
+     text-decoration: none;
+   }
+   form .text2 h2 a:hover{
+     text-decoration: underline;
+   }
+ 
+  

@@ -1,27 +1,29 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="style/login.css">
-</head>
+<?php include_once "php/header/loginheader.php";?>
 <body>
     <div class="wrapper">
+    <section class="formlogin">
         <h2>LOGIN</h2>
-        <form action="dashboard.html">
+        <div class="error-txt"></div>
+        <form action="" method="post" enctype="multipart/form-data">
           <div class="input-box">
-            <input type="text" placeholder="Enter your email" required>
+            <input type="text" name="email" placeholder="Enter your email" required>
           </div>
           <div class="input-box">
-            <input type="password" placeholder="Enter your password" required>
+            <input type="password" name="pass" placeholder="Enter your password" required>
           </div>
           <div class="input-box button">
-            <input type="Submit" value="Login Now">
+            <input type="submit" value="Login Now">
           </div>
           <div class="text">
-            <h3>create a new account?<a href="signin.html">signup</a></h3>
+            <h3>create a new account?<a href="signin.php">signup</a></h3>
+          </div>
+          <br>
+          <div class="text2">
+          <h2>Back To:<a href="index.php"> Home</a></h2>
           </div>
         </form>
+        </section>
       </div>
+      <script src="js/login.js"></script>
 </body>
 </html>

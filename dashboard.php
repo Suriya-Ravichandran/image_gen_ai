@@ -1,17 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Generator AI</title>
-  <link rel="stylesheet" href="style/dashboard.css">
-</head>
+<?php
+session_start();
+
+// Check if user is not logged in, redirect to login page
+if (!isset($_SESSION['id'])) {
+    header("Location: login.php");
+    exit();
+}
+?>
+<?php include_once "php/header/dashboardheader.php";?>
 <body>
+<header class="header">
+      <nav class="navbar">
+        <h2 class="logo"><a href="#">Image Gen AI</a></h2>
+        <ul class="links">
+          <li><a href="index.php">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="buttons">
+          <a href="php/logout.php" class="signup">Logout</a>
+        </div>
+      </nav>
+    </header>
   <section class="image-generator">
     <div class="content">
-      <h1>AI Image Generator Tool JavaScript</h1>
+      <h1>Image Gen AI Tool </h1>
       <p>Convert your text into an image within a second using this
-        JavaScript-powered AI Image Generator tool.</p>
+        Image Gen AI Image Generator tool.</p>
       <form action="#" class="generate-form">
         <input class="prompt-input" type="text" placeholder="Search your image" required>
         <div class="controls">

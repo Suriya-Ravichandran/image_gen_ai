@@ -28,6 +28,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 VALUES ('{$name}', '{$email}', '{$phone}', '{$hashed_password}')");
 
                         if ($sql2) {
+                            // Start session and set session variable
+                            $_SESSION['id'] = mysqli_insert_id($conn);
                             echo "success";
                         } else {
                             echo "Something went wrong!";
